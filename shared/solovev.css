@@ -3,4 +3,28 @@
     width: 100px;
     height: 200px;
     border-radius: 100%;
+    animation: pulse 1s linear infinite alternate;
+    filter: invert(100%) grayscale(90%) blur(2px);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+body {
+    animation: fade-in 10s;
+}
+
+@keyframes fade-in {
+    from {
+        filter: opacity(0)
+    }
+    to {
+        filter: opacity(100%);
+    }
 }
